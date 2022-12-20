@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+	<title>Homework</title>
+	<style type="text/css">
+
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			width: 500px;
+			background: #f4f4f4;
+		}
+
+		.div1{
+			width: 250px;
+			height: 100px;
+			background: linear-gradient(black,silver);
+			border: 2px solid black;
+			box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+			padding: 10px;
+			margin: auto;
+
+			perspective: 600px;
+			perspective-origin: bottom;
+
+			position: relative;
+		}
+
+		.div2{
+			width: 200px;
+			height: 100px;
+			background: linear-gradient(black,silver);
+			border: 2px solid black;
+			box-shadow: -5px 0 10px rgba(0, 0, 0, 0.7);
+
+			padding: 50px;
+
+			transform: rotateX(45deg);
+
+			position: absolute;
+			left: -18px;
+			top: -100%;
+
+			z-index: 1;
+		}
+
+		.div3{
+			width: 125px;
+			height: 85px;
+			background: transparent;
+			/*border: 1px solid black;*/
+			box-shadow: -5px 0 20px rgba(0, 0, 0, 0.7);
+
+			margin: auto;
+
+			perspective: 400px;
+			position: relative;
+
+			/*position: absolute;
+			left: 75px;
+			bottom: 0;*/
+
+			transition: transform 1s;
+		}
+
+		.div3a{
+			width: 62.5px;
+			height: 100%;
+			background: white;
+			border:2px solid black;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+			position: absolute;
+			left: -2px;
+			bottom: 0;
+
+	
+			transition: transform 1s;
+			transform-origin: left;
+
+		}
+
+		.div3a:hover{
+			transform: rotateY(-50deg);
+			
+		}
+
+		.div3b{
+			width: 62.5px;
+			height: 100px;
+			background: white;
+			border: 2px solid black;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+
+			position: absolute;
+			right: -2px;
+			bottom: 0;
+
+			transform: rotateY(50deg);
+			transform-origin: right;
+
+			transition: transform 1s;
+		}
+
+		
+
+		.div3b:hover{
+
+			transform: rotateY(0deg);
+			
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="div1">DIV 1
+
+			<div class="div2"></div>
+			<div class="div3">
+				<div class="div3a"></div>
+				<div class="div3b"></div>
+			</div>
+			
+
+		</div>
+
+	</div>
+</body>
+</hmtl>
